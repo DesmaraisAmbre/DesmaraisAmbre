@@ -788,6 +788,11 @@ progress {
   width: 100%;
 }
 
+.photo-profil {
+    max-width: 250px;
+    border: 4px solid #dee2e6;
+  }
+
 .offset-1 {
   margin-left: 8.33333333%;
 }
