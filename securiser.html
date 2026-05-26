@@ -5,12 +5,14 @@
     <title>Sécuriser - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* --- Styles Généraux --- */
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f5f7fa;
             margin: 0;
-            padding: 0;
-            color: #333;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
         }
 
         .content-section {
@@ -23,19 +25,23 @@
         }
 
         h2 {
-            color: #2c3e50;
             text-align: center;
             margin-bottom: 30px;
+            text-transform: uppercase;
+            font-size: 1.8rem;
         }
 
         h4 {
-            color: #34495e;
-            margin-top: 20px;
+            margin-top: 25px;
             margin-bottom: 10px;
         }
 
+        /* --- Zone de texte --- */
+        .intro-text {
+            margin-bottom: 40px;
+        }
+
         ul {
-            list-style-type: square;
             padding-left: 20px;
             margin-bottom: 20px;
         }
@@ -44,51 +50,100 @@
             line-height: 1.6;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: #2c3e50;
-            color: #fff;
+        /* --- Alignement des boutons AC (Flexbox) --- */
+        .ac-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* Espace entre les boutons */
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        /* Style des bulles AC */
+        .btn-ac {
+            background-color: #a8e897; /* Bleu clair */
+            color: #1a632a;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            margin-top: 20px;
+            font-weight: bold;
+            padding: 40px 60px; /* Rend les boutons imposants comme sur la maquette */
+            border: 4px solid #5f984a; /* Bordure noire épaisse */
+            border-radius: 40px; /* Coins très arrondis */
+            transition: transform 0.2s, background-color 0.2s;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .level-1 {
+            background-color: #73c25f;
+            color: #1a632a;
+            border-color: #5f984a;
         }
 
-        .btn:hover {
-            background-color: #34495e;
+        .btn-ac:hover {
+            transform: scale(1.05);
+            background-color: #a5c2e1;
         }
 
+        /* --- Bouton Retour --- */
+        .back-container {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .btn-return {
+            display: inline-block;
+            background-color: #94a3b8; /* Gris bleuté */
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px 40px;
+            border: 3px solid #373f4d;
+            border-radius: 20px;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .btn-return:hover {
+            background-color: #64748b;
+        }
+
+        /* Mobile */
         @media (max-width: 600px) {
-            .content-section {
-                padding: 20px;
-                margin: 20px;
+            .ac-container {
+                flex-direction: column;
+                align-items: stretch;
             }
         }
     </style>
 </head>
-
 <body>
 
 <section class="content-section">
     <h2>Compétence : Sécuriser</h2>
 
-    <h4>Niveaux</h4>
-    <ul>
-        <li>Découvrir les transmissions et la ToIP</li>
-        <li>Maîtriser les composants de connexion</li>
-        <li>Déployer une solution de connexion ou IP</li>
-    </ul>
+    <div class="intro-text">
+        <h4>Niveaux</h4>
+        <ul>
+            <li>1. Sensibiliser aux vulnérabilités d'un système d'information et aux remédiations possibles</li>
+            <li>2. Mettre en œuvre un système d'information sécurisé pour une petite structure</li>
+        </ul>
 
-    <h4>Situation professionnelle</h4>
-    <p>
-        Dans le cadre d’un projet scolaire, j’ai participé à la mise en place et à
-        l’administration d’un système connecté (mini-serre automatisée).
-        J’ai contribué à la configuration des équipements, à la gestion des données
-        et au bon fonctionnement global du système.
-    </p>
+        <h4>Situation professionnelle</h4>
+        <p>
+            Analyse de l'existant et étude des besoins de sécurité d'une petite structure
+        </p>
+        <p>
+            Evolution et mise en conformité du système d'information d'une entreprise
+        </p>
+    </div>
 
-    <a href="index.html#portfolio" class="btn">Retour au portfolio</a>
+    <div class="ac-container">
+        <a href="administrer-ac1.html" class="btn-ac">Niveau 1</a>
+        <a href="administrer-ac2.html" class="btn-ac">Niveau 2</a>
+    </div>
+
+    <div class="back-container">
+        <a href="index.html#portfolio" class="btn-return">Retour au Portfolio</a>
+    </div>
 </section>
 
 </body>
