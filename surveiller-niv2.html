@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Surveiller - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Styles Généraux --- */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content-section {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+        }
+
+        h4 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        /* --- Zone de texte --- */
+        .intro-text {
+            margin-bottom: 40px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* --- Alignement des boutons AC (Flexbox) --- */
+        .ac-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* Espace entre les boutons */
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        /* Style des bulles AC */
+        .btn-ac {
+            background-color: #ffffff; /* Bleu clair */
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 40px 60px; /* Rend les boutons imposants comme sur la maquette */
+            border: 4px solid #747474; /* Bordure noire épaisse */
+            border-radius: 40px; /* Coins très arrondis */
+            transition: transform 0.2s, background-color 0.2s;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .level-1 {
+            background-color: #f8d7da;
+            color: #721c24;
+            border-color: #f5c6cb;
+        }
+
+        .btn-ac:hover {
+            transform: scale(1.05);
+            background-color: #a5c2e1;
+        }
+
+        /* --- Bouton Retour --- */
+        .back-container {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .btn-return {
+            display: inline-block;
+            background-color: #94a3b8; /* Gris bleuté */
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px 40px;
+            border: 3px solid #373f4d;
+            border-radius: 20px;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .btn-return:hover {
+            background-color: #64748b;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .ac-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="content-section">
+    <h2>Compétence : Surveiller</h2>
+
+    <div class="intro-text">
+        <h4>Apprentissages Critiques</h4>
+        <ul>
+            <li>1. Surveiller l'activité du système d'information</li>
+            <li>2. Appliquer une méthodologie de tests de pénétration</li>
+            <li>3. Réagir face à un incident de sécurité</li>
+            <li>4. Administrer les outils de surveillance du système d'information</li>
+        </ul>
+    </div>
+
+    <div class="ac-container">
+        <a href="surveiller-ac1-2.html" class="btn-ac">AC - 1</a>
+        <a href="surveiller-ac2-2.html" class="btn-ac">AC - 2</a>
+        <a href="surveiller-ac3-2.html" class="btn-ac">AC - 3</a>
+        <a href="surveiller-ac4-2.html" class="btn-ac">AC - 4</a>
+    </div>
+
+    <div class="back-container">
+        <a href="index.html#portfolio" class="btn-return">Retour au Portfolio</a>
+    </div>
+</section>
+
+</body>
+</html>
